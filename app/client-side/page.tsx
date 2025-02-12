@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Header from "@/components/Header";
+import Image from "next/image";
 
 interface Products {
   id: number;
@@ -40,11 +41,11 @@ const Page = () => {
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
     {data.map((product, index) => (
       <div key={index} className="w-[350px] m-12 flex flex-col ites-center justify-center gap-5 border-[5px] border-slate-600 rounded-[10px] p-8">
-        <img src={product.image} alt={product.title}  style={{
-              width: "100%",
-              height: "200px",
-              objectFit: "contain",
-            }}
+        <img 
+          src={product.image} 
+          alt={product.title}
+          width={200}
+          height={300}
           />
           <p className="font-">title: {product.category}</p>
           <h3 className="text-lg m-">{product.title}</h3>
