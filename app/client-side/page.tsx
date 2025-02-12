@@ -41,7 +41,7 @@ const Page = () => {
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
     {data.map((product, index) => (
       <div key={index} className="w-[350px] m-12 flex flex-col ites-center justify-center gap-5 border-[5px] border-slate-600 rounded-[10px] p-8">
-        <img 
+        <Image 
           src={product.image} 
           alt={product.title}
           width={200}
