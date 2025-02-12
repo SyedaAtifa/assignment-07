@@ -47,9 +47,9 @@ const Page = () => {
           width={200}
           height={300}
           />
-          <p className="font-">title: {product.category}</p>
+          <p className="font-">{product.category}</p>
           <h3 className="text-lg m-">{product.title}</h3>
-          <p className="text-[14px]">title: {product.description}</p>
+          <p className="text-[14px]">{product.description}</p>
           <p>${product.price}</p>
       </div>
        ))}
