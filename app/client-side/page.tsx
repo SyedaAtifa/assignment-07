@@ -12,7 +12,7 @@ interface Products {
   rating: number;
 }
 
-const page = () => {
+const Page = () => {
   const [data, setData] = useState<Products[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -57,60 +57,8 @@ const page = () => {
   );
 };
 
-export default page; 
+export default Page; 
 
 
 
 
-// w-[350px] m-12 flex flex-col ites-center justify-center gap-5 border-[5px] border-slate-600 rounded-[10px] p-8
-{/* <div className="flex flex-wrap gap-5 p-5 bg-[#F9F9F9]">
-      {products.map((product) => (
-        <div
-          key={product.id}
-          style={{
-            width: "300px",
-            border: "1px solid #ddd",
-            borderRadius: "8px",
-            padding: "20px",
-            background: "#fff",
-          }}
-        >
-          <img
-            src={product.image}
-            alt={product.title}
-            style={{
-              width: "100%",
-              height: "200px",
-              objectFit: "contain",
-            }}
-          />
-          <h3 style={{ fontSize: "18px", margin: "10px 0" }}>{product.title}</h3>
-          <p>{product.description}</p>
-          <p
-            style={{
-              fontSize: "18px",
-              fontWeight: "bold",
-              margin: "10px 0",
-            }}
-          >
-            ${product.price}
-          </p>
-          <p style={{ color: "#f39c12", fontWeight: "bold", marginBottom: "10px" }}>
-            ⭐ {product.rating.rate} ({product.rating.count} reviews)
-          </p>
-          <button
-            style={{
-              width: "100%",
-              padding: "10px",
-              background: "#007bff",
-              color: "#fff",
-              border: "none",
-              borderRadius: "5px",
-              cursor: "pointer",
-            }}
-          >
-            Buy Now
-          </button>
-        </div>
-      ))}
-    </div> */}
